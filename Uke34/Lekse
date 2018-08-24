@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html prøve side</title>
+</head>
+<body>
+    <h1>Hallo Verden</h1>
+
+    <h3>Informasjon om <strong><em>Verden</em></strong> vår</h3>
+
+    <h5>Jorden eller jorda, <em>(latin: Tellus eller Terra, symbol:Det astronomiske symbolet for Jorden)</em> <img src="https://media.gettyimages.com/photos/earths-symbol-this-is-the-symbol-for-the-planet-earth-picture-id648917488?k=6&m=648917488&s=612x612&w=0&h=dvD5zFSAkGYKpwqFYGLMby2LaWu4C1iixO4LqR3tdd0=" width="12,5" > <br> 
+        Menneskenes planet, er den tredje planeten i vårt solsystem regnet fra solen.<br> 
+        Det er den femte største planeten i solsystemet og planeten med størst tetthet, hvilket innebærer at dens gravitasjon kun overgås av Jupiter, Saturn og Neptun.<br> 
+        Jorden er den største av solsystemets fire steinplaneter, med en diameter noe større enn Venus' og om lag dobbelt så stor som Mars.<br> 
+        <br>
+        Jordkloden blir også noen ganger omtalt som <strong>Verden</strong>, den blå planeten, eller som Tellus («Jord») etter dens ene latinske betegnelse.<br> 
+        Jorden er det eneste stedet i Universet som man med sikkerhet kan si at det finnes liv.</h5>
+        <h3>Verdensdeler</h3>
+        <ul>
+            <li>Europa</li>
+            <li>Asia</li>
+            <li>Afrika</li>
+            <li>Nord-Amerika</li>
+            <li>Sør-Amerika</li>
+            <li>Oseania</li>
+            <li>Antarktis</li>
+        </ul>
+</body>
+</html>
