@@ -1,0 +1,27 @@
+window.onload = oppstart; //Når vinduet lastet så skal funskjonen oppstart kjøre
+
+var tall; //Nå er tall en gloal variabel
+
+function oppstart(){
+    document.getElementById("Generelt").onclick = Generelt;
+    document.getElementById("NæringsMidler").onclick = NæringsMidler;
+    docaaument.getElementById("Personstransport").onclick = Personstransport; //dette er en lytter som lytter på knappen med navn knapp
+        //når vi trykker på knappen så kjøres funskjonen skrivUt
+}
+
+
+function Generelt(){
+    var pris = document.getElementById("price").value;
+    var NyPris = pris * 1.25
+    document.getElementById("result").innerHTML = "NyPris" + NyPris;
+    }
+function NæringsMidler(){
+    var pris = document.getElementById("price").value;
+    var NyPris = pris * 1.15
+    document.getElementById("result").innerHTML = "NyPris" + NyPris;
+}
+function Personstransport(){
+    var pris = document.getElementById("price").value;
+    var NyPris = pris * 1.08;
+    document.getElementById("result").innerHTML = "NyPris" + NyPris;
+    }
