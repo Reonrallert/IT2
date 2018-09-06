@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compat
+    ible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        
+        <h1>Co2 Kalkulator</h1><br>
+         Antall i bilen (Mellom 1 og 9): <input type="submit" value="Submit" id="antallId">
+         <input type="number" max="9" min="1" id="antallId"> <br>
+         <script type="text/javascript" src="Utslipp kalkulator.js"></script>
+       
+        
+           
+</body>
+</html>
