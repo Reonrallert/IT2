@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spåkoneservice</title>
+    <script src="spåkoneservice.js"></script>
+</head>
+<body>
+    <h1>Velkommen til språkoneservice</h1>
+    <br>
+    <h3>Tast inn dine date i feltene under, og trykk på skådomm knappen</h3>
+    <form>
+            <input type="radio" name="Kjønn" value="gutt" id="gutt">
+            <label for="gutt"> gutt </label>
+            <input type="radio" name="Kjønn" value="jente" id="jente">
+        <label for="jente"> jente </label>
+        <br>
+        Alder:<br>
+        <input type="number" name="Alder" id="alder"><br>
+        høyde i centimeter:<br>
+        <input type="number" name="Høyde" id="høyde">
+        <br>
+        <input type="button" value="Spådom!" id="knapp">
+      </form>
+      <div id="result"></div>
+</body>
+</html>
