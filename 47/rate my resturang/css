@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+    margin: 0;
+    background-color: rgb(148, 96, 53);
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    color: white;
+    font-size: 1.5em;
+}
+input[type='text'] {
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat', serif;
+}
+input[type='radio'] {
+    width: 18px;
+    height: 18px;
+    margin-right: 50px;
+}
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas:
+    'overview image image'
+    'overview rating rating'
+    'previous result next';
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 50% 30% 20%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.grid-item {
+    padding: 40px;
+    background-color: rgb(148, 96, 53);
+}
+#overview {
+    grid-area: overview;
+    background-color: rgb(148, 96, 53);
+    text-align: left;
+}
+#image {
+    grid-area: image;
+    background-color: rgb(132, 86, 48);
+}
+#rating {
+    grid-area: rating;
+    background-color: rgb(127, 78, 38);
+}
+#previous {
+    grid-area: previous;
+    background-color: rgb(111, 70, 37);
+}
+#result {
+    grid-area: result;
+    background-color: rgb(101, 64, 35);
+}
+#next {
+    grid-area: next;
+    background-color: rgb(111, 70, 37);
+}
+.image {
+    max-height: 100%;
+    max-width: 100%;
+}
+input[type='button'] {
+    outline: 0;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(148, 96, 53);
+    font-size: 26px;
+    padding: 15px;
+    transition: 0.25s;
+}
+input[type='button']:hover {
+    background-color: white;
+    color: rgb(148, 96, 53);
+    cursor: pointer;
+}
+.subtitle {
+    font-size: 1.15em;
+    font-weight: bold;
+}
