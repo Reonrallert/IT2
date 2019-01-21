@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <h2>Velg ut to numre fra en liste</h2>
+    <select id="tresorter">
+        <option value="0">"Velg en tresort"</option>
+        <option value="1">Furu</option>
+        <option value="2">Gran</option>
+        <option value="3">Lauvtre</option>
+    </select>
+    <br>
+    <input type="number" name="tre1" id="tre1">
+    <input type="number" name="tre2" id="tre2">
+    <input type="button" value="Beregn" id="knapp">
+    <div id="result"></div>
+
+    
+    
+</body>
+</html>
