@@ -1,0 +1,37 @@
+window.onload = oppstart;
+
+var total;
+
+var tresorter = ["Furu", "Gran", "Lauvtre"]
+var årstall = ["1915","1950","1970","1990","2000"]
+var tretabell = {
+    "Furu" :["20","31","53","89","102","117"],
+    "Gran" :["23","39","72","89","92","99"],
+    "Lauvtre" :["4","6","8","12","15","18"],
+
+};
+
+function oppstart(){
+document.getElementById("knapp").onclick = beregn;
+    console.log ("link fungerte");
+}
+
+function beregn(){
+    var verdi1 = document.getElementById("tre1").value;
+    var verdi2 = document.getElementById("tre2").value;
+    var total= (verdi1-verdi2);
+    var prosent= (verdi1-verdi2)
+    document.getElementById("result").innerHTML = total;
+}
+
+function furu(){
+
+}
+
+function gran(){
+
+}
+
+function lauvtre(){
+
+}
