@@ -3,35 +3,55 @@ window.onload = oppstart;
 var total;
 
 var tresorter = ["Furu", "Gran", "Lauvtre"]
-var årstall = ["1915","1950","1970","1990","2000"]
+var årstall = [1915,1950,1970,1990,2000]
 var tretabell = {
-    "Furu" :["20","31","53","89","102","117"],
-    "Gran" :["23","39","72","89","92","99"],
-    "Lauvtre" :["4","6","8","12","15","18"],
+    "Furu" :[20,31,53,89,102,117],
+    "Gran" :[23,39,72,89,92,99],
+    "Lauvtre" :[4,6,8,12,15,18],
 
 };
 
 function oppstart(){
 document.getElementById("knapp").onclick = beregn;
     console.log ("link fungerte");
+    document.getElementById("knapp2").onclick = beregn2;
 }
 
 function beregn(){
     var verdi1 = document.getElementById("tre1").value;
     var verdi2 = document.getElementById("tre2").value;
-    var total= (verdi1-verdi2);
-    var prosent= (verdi1-verdi2)
-    document.getElementById("result").innerHTML = total;
+    var forskjell = (verdi1-verdi2);
+    document.getElementById("result").innerHTML = forskjell;
+    var forhold = (forskjell/verdi1)
+    var prosent = (forhold*100);
+    var n = prosent.toFixed(2);
+
+    document.getElementById("result2").innerHTML =n+"%";
 }
 
-function furu(){
+function beregn2(){
+    var tresort = document.getElementById("tresorter").value;
+    var år1 = document.getElementById("årstall1").value;
+    var år2 = document.getElementById("årstall2").value;
+    var array = tretabell[tresort];
+    var index1 = årstall.indexOf(Number(år1));
+    //(Number) gjør at den bare tar å bruker tall istedenfor å lese det som tekst, konverterer string til tall slikt at det kan leses i listen
+    var index2 = årstall.indexOf(Number(år2));
 
-}
+    var verdi3 = array[index1];
+    var verdi4 = array[index2];
+    console.log (array);
+    console.log (index1);
+    console.log (verdi4);
+    var forskjell2 = (verdi3-verdi4);
+    document.getElementById("result3").innerHTML = forskjell2;
+    var forhold2 = (forskjell2/verdi3)
+    //deler de to verdiene på hverandre for å finne ut prosentforsjellen av 1 
+    var prosent2 = (forhold2*100);
+    // ganger med 100 slikt at det blir prosenten ut av 100 isteden for 1
+    var b = prosent2.toFixed(2);
+    // tofixed (2); gjør at det er maks to desimaler etter tallet
 
-function gran(){
-
-}
-
-function lauvtre(){
-
+    document.getElementById("result4").innerHTML =b+"%";
+    //skriver ut svaret der en legger sammen b og et prosent tegn på slutten
 }
