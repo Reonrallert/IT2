@@ -9,19 +9,43 @@
 </head>
 <body>
     <h2>Velg ut to numre fra en liste</h2>
-    <select id="tresorter">
-        <option value="0">"Velg en tresort"</option>
-        <option value="1">Furu</option>
-        <option value="2">Gran</option>
-        <option value="3">Lauvtre</option>
-    </select>
+    <img src="skjermbilde.png" alt="bilde">
+    <br>
+   
     <br>
     <input type="number" name="tre1" id="tre1">
     <input type="number" name="tre2" id="tre2">
     <input type="button" value="Beregn" id="knapp">
     <div id="result"></div>
-
-    
+    <div id="result2"></div>
+    <br>
+ <select id="tresorter">
+        <option value="0">"Velg en tresort"</option>
+        <option value="Furu">Furu</option>
+        <option value="Gran">Gran</option>
+        <option value="Lauvtre">Lauvtre</option>
+    </select>
+    <br><br><br>
+         <select id="årstall1">
+            <option value="0">"Velg en årstall"</option>
+            <option value="1915">1915</option>
+            <option value="1950">1950</option>
+            <option value="1970">1970</option>
+            <option value="1990">1990</option>
+            <option value="2000">2000</option>
+        </select>
+                 <select id="årstall2">
+                     <option value="0">"Velg en årstall"</option>
+                     <option value="1915">1915</option>
+                     <option value="1950">1950</option>
+                     <option value="1970">1970</option>
+                     <option value="1990">1990</option>
+                     <option value="2000">2000</option>
+                  </select>
+              
+<input type="button" value ="Beregn"id="knapp2"> 
+<div id="result3"></div>
+<div id="result4"></div>
     
 </body>
 </html>
