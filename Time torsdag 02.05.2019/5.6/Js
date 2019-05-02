@@ -1,0 +1,39 @@
+window.onload = oppstart;
+
+var dager = ["ma", "ti", "on", "to", "fr", "lø", "sø"];
+
+
+
+
+function oppstart(){
+document.getElementById("lag").onclick= kalender;
+
+}
+
+function kalender(){
+    var dager2 = Number(document.getElementById("dager1").value);
+    var delay =Number (document.getElementById("delay").value);
+
+    var str ="";
+    for (var i = 0 ; i < dager.length; i++){
+        str += dager[i] + " ";
+    }
+    str +="<br>";
+    for  (var i=1; i<=(dager2+delay); i++)
+    {
+        if (i<delay+1){
+            str+= "-- ";
+        } else {
+if (i-delay<10) {
+    str+= "0"+ (i-delay) + " ";
+} else {
+    str += (i-delay) + " ";
+}
+if (i%7==0){
+    str+="<br>";
+}
+        }
+    }
+    
+    document.getElementById("kalender").innerHTML = str;
+}
